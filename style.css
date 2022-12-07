@@ -221,6 +221,7 @@ textarea {
   background-color: transparent;
   border: 2px transparent #338149;
   transition: 0.8s;
+  cursor: pointer;
 }
 #button:hover {
   color: #338149;
@@ -268,6 +269,14 @@ footer li a:hover {
     border: 1px solid #5aed83;
     padding: 10px;
     font-size: 20px;
+  }
+}
+@media (max-width: 715px) {
+  footer {
+    justify-content: center;
+  }
+  footer ul {
+    padding: 8px;
   }
 }
 @media (max-width: 671px) {
