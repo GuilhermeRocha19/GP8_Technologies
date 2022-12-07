@@ -15,12 +15,19 @@ function Service() {
   Trabalhando na preservação e estruturação de documentos, assim como o acesso
   autorizado e hierarquizado aos documentos digitais ou microfilmes.</p>`;
 }
-function dell() {
-  res.innerHTML = `<h2> Dell</h2> <p class="p">Leyendo o escuchando las noticias, es evidente que la culpa es del pueblo que no sabe votar. ¿Será? Mi modesta opinión es que la culpa es de la educación, de nosotros profesores que no cumplimos con el juramento que hicimos…</p>`;
-}
-function microsoft() {
-  res.innerHTML = `<h2>Microsoft</h2> <p class="p">El último domingo estuve almorzando en la casa de una de mis hijas. Como siempre, intento evitar hablar sobre política o educación de mis nietas, pero como es habitual, no consigo resistir a una provocación. Sintetizando, durante el retorno a…</p>`;
-}
-function adp() {
-  res.innerHTML = `<h2>ADP</h2> <p class="p">O domingo estive almoçando na casa de uma de minhas filhas. Normalmente tento evitar falar sobre política ou educação das minhas netas, mas como sempre, não consigo resistir a uma provocação. Sintetizando, no retorno à minha casa, umas duas horas…</p>`;
+var emails = document.getElementById("email");
+
+var select = document.getElementById("lista");
+var opcaoValor = select.options[select.selectedIndex].text;
+
+function enviarfaq() {
+  console.log(opcaoValor);
+  if (emails.value.length == 0) {
+    window.alert(`Por Favor, digite o seu e-mail para continuar.`);
+  } else {
+    window.alert(
+      `Sua mensagem foi enviada! Em torno de 24 horas voce receberá um email resposta no endereço de e-mail: ${emails.value}`
+    );
+    emails.value = "";
+  }
 }

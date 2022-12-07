@@ -16,9 +16,9 @@
     <header>
       <img src="imagens/logo.png" alt="Gp8 Technologies" class="logo" />
       <div class="botoes">
-        <button class="botao">Serviços</button>
-        <button class="botao">FAQ</button>
-        <button class="botao">Contato</button>
+        <button class="botao"><a href="#services">Serviços</a> </button>
+        <button class="botao"><a href="#faq">FAQ</a> </button>
+        <button class="botao"><a href="#contats">Contato</a></button>
         
       </div>
     </header>
@@ -40,7 +40,7 @@
      
     </div>
     <hr />
-    <main>
+    <main id="services">
       <h1 class="h1">GP8 Technologies</h1>
       <p class="mainp">
         A GP8 Technologies oferece alta tecnologia e agilidade em digitalização de
@@ -72,7 +72,7 @@ Comercializamos Scanners e Softwares de Gestão Documental.
         </div>
         <div class="soluc" >
           <h3>Agilidade</h3>
-          <img src="imagens/Agilidade.png.webp" alt="">
+          <img src="imagens/agilidade.png.webp" alt="">
           <p>Arquivos digitais são bem mais rápidos de ser pesquisados, encontrados e consultados.</p>
         </div>
         <div class="soluc" >
@@ -88,33 +88,66 @@ Comercializamos Scanners e Softwares de Gestão Documental.
         
       </div>
     </aside>
+    <div class="faq" id="faq">
+      <h1>FAQ</h1>
+      <div class="faqchoice">
+          <div class="faqselection">
+            <label for="lista">Selecione a Central:</label>
+            <select name="lista" id="lista">
+              <option value="Question">Dúvidas</option>
+              <option value="Job" selected>Trabalhe Conosco</option>
+              <option value="Complaint" >Reclamação</option>
+              <option value="buy" >Nos Contrate</option>
+            </select>
+        </div>
+
+        <div class="faqselection">
+          <label for="" >Email:  </label >
+          <input type="email" placeholder="pedro@example.com.br" id="email" />
+        </div> 
+
+        <div class="faqselection">
+          <label for=""> Anexo:</label> 
+          <input type="file" name="" id="" />
+        </div> 
+
+      </div>
+
+      <div id="textbutton">
+        <textarea name="" id="" cols="60" rows="10"></textarea>
+        <button onclick="enviarfaq()" id="button"> Enviar</button>
+      </div>
+      
+
+
+    </div>
     
     <footer>
       <div>
-        <h3>Créditos:</h3>
+        <h3>Redes Sociais:</h3>
         <ul>
-          <li><strong>Roteiro:</strong>pessoa1</li>
-          <li><strong>Desenvolvimento do site:</strong>pessoa2</li>
-          <li><strong>Design:</strong>pessoa3</li>
-          <li><strong>Escrita:</strong>pessoa4</li>
+          <li><a href="http://#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="http://#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li><a href="http://#" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+          <li><a href="http://#" target="_blank" rel="noopener noreferrer">Twitter</a></li>
         </ul>
       </div>
       <div>
-        <h3>Créditos:</h3>
+        <h3>Leia mais:</h3>
         <ul>
-          <li><strong>Roteiro:</strong>pessoa1</li>
-          <li><strong>Desenvolvimento do site:</strong>pessoa2</li>
-          <li><strong>Design:</strong>pessoa3</li>
-          <li><strong>Escrita:</strong>pessoa4</li>
+          <li><a href="http://#" target="_blank" rel="noopener noreferrer">Tecnologia em Nuvem</a></li>
+          <li><a href="http://#" target="_blank" rel="noopener noreferrer">História da Digitalização</a></li>
+          <li><a href="http://#" target="_blank" rel="noopener noreferrer">Curiosidades Mundo Tech</a></li>
+          <li><a href="http://#" target="_blank" rel="noopener noreferrer">Inglês Instrumental</a></li>
         </ul>
       </div>
-      <div>
-        <h3>Créditos:</h3>
+      <div id="contats">
+        <h3>Contatos:</h3>
         <ul>
-          <li><strong>Roteiro:</strong>pessoa1</li>
-          <li><strong>Desenvolvimento do site:</strong>pessoa2</li>
-          <li><strong>Design:</strong>pessoa3</li>
-          <li><strong>Escrita:</strong>pessoa4</li>
+          <li><strong>Whatsapp:</strong> (51)99216-0863</li>
+          <li><strong>Telefone:</strong> (51)4002-8922</li>
+          <li><strong>Email:</strong> contato@gp8tech.com.br</li>
+          
         </ul>
       </div>
     </footer>
