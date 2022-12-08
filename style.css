@@ -57,8 +57,9 @@ header {
 .background > h1 {
   text-align: center;
   color: white;
-  max-width: 600px;
+  max-width: 800px;
   padding: 25px;
+  font-size: 50px;
 }
 
 #container {
@@ -89,9 +90,9 @@ header {
   margin: auto;
   display: flex;
   flex-direction: column;
-  text-align: center;
+
   justify-content: center;
-  align-items: center;
+  text-align: justify;
   max-width: 900px;
 }
 #res p {
@@ -102,6 +103,7 @@ header {
   margin-bottom: 20px;
   color: #338149;
   font-size: 50px;
+  text-align: center;
 }
 main {
   margin: 100px auto;
@@ -120,7 +122,7 @@ main h1 {
   margin-top: 20px;
   line-height: 4.5vh;
   font-size: 20px;
-  text-align: center;
+  text-align: justify;
 }
 aside {
   display: flex;
@@ -243,10 +245,21 @@ footer h3 {
   font-size: 22px;
 }
 footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   list-style: none;
   padding: 20px;
 }
+ul img {
+  width: 30px;
+  text-align: center;
+}
 footer li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 5px;
 }
 footer li a {
